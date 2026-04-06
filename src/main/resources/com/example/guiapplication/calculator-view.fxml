@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.guiapplication.SimpleCalculatorController">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <HBox spacing="10" alignment="CENTER">
+        <VBox alignment="CENTER"><Label text="1st Number"/><TextField fx:id="tfNumber1" prefWidth="80" /></VBox>
+        <ComboBox fx:id="cbOperations" />
+        <VBox alignment="CENTER"><Label text="2nd Number"/><TextField fx:id="tfNumber2" prefWidth="80" /></VBox>
+        <VBox alignment="CENTER"><Label text="Result"/><Label fx:id="lblResult" text="0" style="-fx-border-color: gray; -fx-padding: 5;" prefWidth="80" alignment="CENTER"/></VBox>
+    </HBox>
+    <Button fx:id="btnCompute" text="Compute Result" onAction="#onCompute" />
+</VBox>
